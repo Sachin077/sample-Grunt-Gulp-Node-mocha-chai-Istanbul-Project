@@ -1,8 +1,7 @@
-/// <reference path="../node/users.ts" />
-/// <reference path="../node_modules/typescript/lib/lib.es6.d.ts" />
-/// <reference path="../node/typings/index.d.ts" />
+/// <reference path="../src/users.ts" />
+/// <reference path="../src/typings/index.d.ts" />
 
-import userData = require('../node/users');
+import userData = require('../src/users');
 import chai = require('chai');
 
 const expect = chai.expect;
