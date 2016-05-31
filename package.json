@@ -21,6 +21,9 @@
     "grunt-ts": "5.5.1",
     "grunt-tsd": "0.1.0",
     "grunt-typescript": "~0.7.0",
-    "grunt-typings": "0.1.4"
+    "grunt-typings": "0.1.4",
+    "gulp": "^3.9.1",
+    "gulp-typescript": "^2.5.0", 
+    "gulp-mocha": "2.2.0"
   }
 }
