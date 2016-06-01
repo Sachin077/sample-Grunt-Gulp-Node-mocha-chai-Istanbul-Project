@@ -103,7 +103,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('build', ['tsd', 'ts:src']);
     grunt.registerTask('test', ['ts:test', 'mochaTest:test']);
-    grunt.registerTask('coverage', ['ts:test', 'node_mocha:coverage', 'http-server:coverage']);
+    grunt.registerTask('coverage', ['ts:test', 'node_mocha:coverage']);
     grunt.registerTask('run', ['nodemon']);
     // Must have installed node-inspector globally 'sudo npm install -g node-inspector'
     grunt.registerTask('debug', ['shell:debug']);
