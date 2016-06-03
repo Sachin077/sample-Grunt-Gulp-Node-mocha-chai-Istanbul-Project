@@ -25,6 +25,7 @@
     "grunt-typings": "0.1.4",
     "gulp": "^3.9.1",
     "gulp-typescript": "^2.5.0", 
-    "gulp-mocha": "2.2.0"
+    "gulp-mocha": "2.2.0",
+    "mocha-junit-reporter": "1.11.1"
   }
 }
