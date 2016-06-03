@@ -6,7 +6,7 @@ var istanbul = require('gulp-istanbul');
 var mocha = require('gulp-mocha');
 
 gulp.task('build', function(){
-  gulp.src(['node/*.ts'])
+  gulp.src(['src/*.ts'])
     .pipe(ts({ sourceMap: true, declaration: true, outDir: './js' }))
     .pipe(gulp.dest('./js'))
 });
@@ -26,7 +26,7 @@ gulp.task('testit', function () {
 gulp.task('test', ['buildTest', 'testit'])
 
 gulp.task('pre-test', function () {
-  return gulp.src(['js-test1/node/*.js'])
+  return gulp.src(['js-test1/src/*.js'])
     // Covering files 
     .pipe(istanbul({includeUntested: true}))
     // Force `require` to return covered files 
