@@ -24,3 +24,4 @@ Run the following commands:
       
       gulp test
       
+      gulp coverage
