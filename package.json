@@ -19,13 +19,14 @@
     "grunt-shell": "~1.1.2",
     "grunt-simple-mocha": "~0.4.0",
     "grunt-mocha-test": "0.12.7",
-    "grunt-ts": "5.5.1",
     "grunt-tsd": "0.1.0",
     "grunt-typescript": "~0.7.0",
     "grunt-typings": "0.1.4",
     "gulp": "^3.9.1",
     "gulp-typescript": "^2.5.0", 
     "gulp-mocha": "2.2.0",
+    "gulp-tsc": "1.1.5",
+    "gulp-istanbul": "0.10.4",
     "mocha-junit-reporter": "1.11.1"
   }
 }
