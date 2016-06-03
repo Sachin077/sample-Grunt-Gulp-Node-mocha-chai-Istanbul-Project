@@ -30,7 +30,7 @@ module.exports = function (grunt) {
         mochaTest: {
               test: {
                 options: {
-                  reporter: 'XUnit',
+                  reporter: 'node_modules/mocha-junit-reporter',
                   captureFile: 'results.xml', // Optionally capture the reporter output to a file 
                   quiet: false, // Optionally suppress output to standard out (defaults to false) 
                   clearRequireCache: false // Optionally clear the require cache before running tests (defaults to false) 
@@ -47,7 +47,7 @@ module.exports = function (grunt) {
                         timeout: 3000,
                         ignoreLeaks: false,
                         ui: 'bdd',
-                        reporter: 'landing'
+                        reporter: 'node_modules/mocha-junit-reporter'
                     }
                 }
             },
@@ -61,7 +61,7 @@ module.exports = function (grunt) {
                         ui: 'bdd',
                         reporter: 'spec'
                     },
-                    reportFormats: ['html'], // other grunt-mocha-istanbul can be added here
+                    reportFormats: ['cobertura'], // other grunt-mocha-istanbul can be added here
                     runCoverage: true // Run the unit test and generate coverage test
                 }
             }
@@ -102,7 +102,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-ts');
 
     grunt.registerTask('build', ['tsd', 'ts:src']);
-    grunt.registerTask('test', ['ts:test', 'mochaTest:test']);
+    grunt.registerTask('test', ['ts:test', 'node_mocha:test']);
     grunt.registerTask('coverage', ['ts:test', 'node_mocha:coverage']);
     grunt.registerTask('run', ['nodemon']);
     // Must have installed node-inspector globally 'sudo npm install -g node-inspector'
