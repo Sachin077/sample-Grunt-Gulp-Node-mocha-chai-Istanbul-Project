@@ -25,7 +25,7 @@ gulp.task('testit', function () {
 
 gulp.task('test', ['buildTest', 'testit'])
 
-gulp.task('pre-test', function () {
+/*gulp.task('pre-test', function () {
   return gulp.src(['js-test1/src/*.js'])
     // Covering files 
     .pipe(istanbul({includeUntested: true}))
@@ -38,4 +38,4 @@ gulp.task('coverage', ['pre-test'], function () {
     .pipe(mocha())
     // Creating the reports after tests ran 
     .pipe(istanbul.writeReports({reporters: ['cobertura']}));
-});
+});*/
