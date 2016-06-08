@@ -27,6 +27,8 @@
     "gulp-mocha": "2.2.0",
     "gulp-tsc": "1.1.5",
     "gulp-istanbul": "0.10.4",
-    "mocha-junit-reporter": "1.11.1"
+    "mocha-junit-reporter": "1.11.1",
+    "grunt-nodemon": "~0.4.0",
+    "grunt-ts": "5.5.1"
   }
 }
