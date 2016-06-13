@@ -29,6 +29,7 @@
     "gulp-istanbul": "0.10.4",
     "mocha-junit-reporter": "1.11.1",
     "grunt-nodemon": "~0.4.0",
-    "grunt-ts": "5.5.1"
+    "grunt-ts": "5.5.1",
+    "grunt-cli": "1.2.0"
   }
 }
