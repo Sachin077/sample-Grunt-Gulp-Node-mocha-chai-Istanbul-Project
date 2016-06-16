@@ -11,7 +11,7 @@ describe("Get existing user", () => {
     it("should return user", () => {
         const user = userInfo.read(0);
         console.log(user);
-        expect(user).to.eql({id: 5, firstname: 'first', lastname: 'last', age: 42});
+        expect(user).to.eql({id: 0, firstname: 'first', lastname: 'last', age: 42});
     });
 });
 
@@ -27,7 +27,7 @@ describe("Create user", () => {
     it("should return user", () => {
         const user = userInfo.create({firstname: 'Sachin', lastname: 'Aggarwal', age: 21});
         console.log(user);
-        expect(user).to.eql({id: 766, firstname: 'Sachin', lastname: 'Aggarwal', age: 21});
+        expect(user).to.eql({id: 1, firstname: 'Sachin', lastname: 'Aggarwal', age: 21});
     });
 });
 
