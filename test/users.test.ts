@@ -11,7 +11,7 @@ describe("Get existing user", () => {
     it("should return user", () => {
         const user = userInfo.read(0);
         console.log(user);
-        expect(user).to.eql({id: 1, firstname: 'first', lastname: 'last', age: 42});
+        expect(user).to.eql({id: 0, firstname: 'first', lastname: 'last', age: 42});
     });
 });
 
