@@ -4,6 +4,8 @@ var path = require('path');
 var ts = require('gulp-tsc');
 var istanbul = require('gulp-istanbul');
 var mocha = require('gulp-mocha');
+const jasmine = require('gulp-jasmine');
+const reporters = require('jasmine-reporters');
 
 gulp.task('build', function(){
   gulp.src(['src/*.ts'])
@@ -25,6 +27,14 @@ gulp.task('testit', function () {
 
 gulp.task('test', ['buildTest', 'testit'])
 
+gulp.task('jtest', () =>
+  gulp.src('js-test1/test/*.js')
+    .pipe(jasmine({
+      reporter: new reporters.JUnitXmlReporter()
+    }))
+);
+
+gulp.task('jasmineTest', ['buildTest', 'jtest'])
 /*gulp.task('pre-test', function () {
   return gulp.src(['js-test1/src/*.js'])
     // Covering files 
