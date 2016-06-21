@@ -27,7 +27,7 @@ gulp.task('testit', function () {
 
 gulp.task('test', ['buildTest', 'testit'])
 
-gulp.task('jtest', () =>
+gulp.task('jtest', ['buildTest'], () =>
   gulp.src('js-test1/test/*.js')
     .pipe(jasmine({
       reporter: new reporters.JUnitXmlReporter()
